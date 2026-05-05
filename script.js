@@ -25,8 +25,8 @@ const i18n = {
     'hero.scroll':    'Deslizá para explorar',
 
     'about.heading':         'Sobre mí',
-    'about.p1': 'Soy uruguayo radicado en Buenos Aires, con un perfil híbrido entre Data Engineering, Análisis de Datos y Automatización. Me especializo en construir pipelines robustos, transformar datos complejos en información clara y accionable para la toma de decisiones, e integrar IA generativa de forma nativa en proyectos reales: desde agentes conversacionales hasta automatizaciones con MCP.',
-    'about.p2': 'Viví casi tres años en Madrid, donde completé mi especialización en Data Science y trabajé en entornos corporativos europeos — una experiencia que reforzó mi adaptabilidad y mi visión de los datos como herramienta de negocio. Hoy trabajo como Data & Automation Analyst en Accenture asignado a Mercado Pago, combinando ingeniería de datos, análisis de negocio y automatización inteligente.',
+    'about.p1': 'Soy Licenciado en Administración con una especialización en Data Science y un perfil híbrido entre Data Engineering, Análisis de Datos y Automatización. Construyo pipelines robustos, transformo datos complejos en información clara y accionable para la toma de decisiones, e integro IA generativa de forma nativa en proyectos reales: desde agentes conversacionales hasta automatizaciones con MCP.',
+    'about.p2': 'Viví casi tres años en Madrid, donde completé esa formación y trabajé en entornos corporativos europeos — una experiencia que reforzó mi adaptabilidad y mi visión de los datos como herramienta de negocio. Hoy trabajo como Data & Automation Analyst en Accenture asignado a Mercado Pago, combinando ingeniería de datos, análisis de negocio y automatización inteligente.',
     'about.p3': 'Me interesa sumarme a equipos y empresas que pongan la tecnología y los datos en el centro — entornos donde construir, automatizar y decidir con datos sea parte del día a día.',
     'about.card.location':  'Ubicación',
     'about.card.current':   'Empresa actual',
@@ -84,8 +84,8 @@ const i18n = {
     'hero.scroll':    'Scroll to explore',
 
     'about.heading':         'About me',
-    'about.p1': "I'm Uruguayan, based in Buenos Aires, with a hybrid profile across Data Engineering, Data Analysis, and Automation. I specialize in building robust pipelines, turning complex data into clear and actionable insights for decision-making, and natively integrating generative AI into real projects: from conversational agents to MCP-powered automations.",
-    'about.p2': 'I spent nearly three years in Madrid, where I completed my Data Science specialization and worked in European corporate environments — an experience that strengthened my adaptability and my view of data as a core business tool. Today I work as Data & Automation Analyst at Accenture assigned to Mercado Pago, combining data engineering, business analysis, and intelligent automation.',
+    'about.p1': "I hold a degree in Business Administration with a specialization in Data Science and a hybrid profile across Data Engineering, Data Analysis, and Automation. I build robust pipelines, turn complex data into clear and actionable insights for decision-making, and natively integrate generative AI into real projects: from conversational agents to MCP-powered automations.",
+    'about.p2': 'I spent nearly three years in Madrid completing that training and working in European corporate environments — an experience that strengthened my adaptability and my view of data as a core business tool. Today I work as Data & Automation Analyst at Accenture assigned to Mercado Pago, combining data engineering, business analysis, and intelligent automation.',
     'about.p3': "I'm looking to join teams and companies that put technology and data at the center — environments where building, automating, and deciding with data is part of everyday work.",
     'about.card.location':  'Location',
     'about.card.current':   'Current company',

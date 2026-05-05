@@ -67,7 +67,7 @@ const i18n = {
     'contact.heading': '¿Hablamos?',
     'contact.sub':     'Estoy abierto a oportunidades en Data Engineering, DataOps y proyectos interesantes. Escribime directamente.',
 
-    'footer.copy': 'Hecho con ❤️ y sin frameworks',
+    'footer.copy': 'Diseñado y construido por Sebastián Pomi',
   },
   en: {
     'nav.about':      'About',
@@ -126,7 +126,7 @@ const i18n = {
     'contact.heading': "Let's talk",
     'contact.sub':     "I'm open to opportunities in Data Engineering, DataOps, and interesting projects. Reach out directly.",
 
-    'footer.copy': 'Built with ❤️ and no frameworks',
+    'footer.copy': 'Designed and built by Sebastián Pomi',
   },
 };
 
@@ -282,6 +282,20 @@ const courses = [
 // ============================================================
 const projects = [
   {
+    id: 'soundcad',
+    icon: '🎧',
+    statusEs: 'Beta pública',
+    statusEn: 'Public Beta',
+    statusColor: 'green',
+    titleEs: 'SoundCad Music',
+    titleEn: 'SoundCad Music',
+    descEs: 'Plataforma de inteligencia musical que consolida datos en tiempo real de 8 APIs (Spotify, Last.fm, YouTube, Wikipedia, MusicBrainz, Setlist.fm, Deezer, Apple Music). Genera perfiles de artistas con "Momentum Score" propio, análisis de canciones con "Sample DNA" y tendencias de mercado. Alternativa open-source a Chartmetric ($150/mes) y Soundcharts.',
+    descEn: 'Music intelligence platform consolidating real-time data from 8 APIs (Spotify, Last.fm, YouTube, Wikipedia, MusicBrainz, Setlist.fm, Deezer, Apple Music). Generates artist profiles with a custom "Momentum Score", song analysis with "Sample DNA", and market trends. Open-source alternative to Chartmetric ($150/mo) and Soundcharts.',
+    tags: ['Python', 'FastAPI', 'PostgreSQL', 'Vanilla JS', 'Spotify API', 'Last.fm', 'YouTube API', 'REST APIs'],
+    github: 'https://github.com/spomis1/soundcad-music',
+    demo: 'https://spomis1.github.io/soundcad-music/',
+  },
+  {
     id: 'ai-agent',
     icon: '🤖',
     statusEs: 'En producción',
@@ -295,20 +309,6 @@ const projects = [
     github: null,
     demo: null,
     internal: true,
-  },
-  {
-    id: 'soundcad',
-    icon: '🎧',
-    statusEs: 'Beta pública',
-    statusEn: 'Public Beta',
-    statusColor: 'green',
-    titleEs: 'SoundCad Music',
-    titleEn: 'SoundCad Music',
-    descEs: 'Plataforma de inteligencia musical que consolida datos en tiempo real de 8 APIs (Spotify, Last.fm, YouTube, Wikipedia, MusicBrainz, Setlist.fm, Deezer, Apple Music). Genera perfiles de artistas con "Momentum Score" propio, análisis de canciones con "Sample DNA" y tendencias de mercado. Alternativa open-source a Chartmetric ($150/mes) y Soundcharts.',
-    descEn: 'Music intelligence platform consolidating real-time data from 8 APIs (Spotify, Last.fm, YouTube, Wikipedia, MusicBrainz, Setlist.fm, Deezer, Apple Music). Generates artist profiles with a custom "Momentum Score", song analysis with "Sample DNA", and market trends. Open-source alternative to Chartmetric ($150/mo) and Soundcharts.',
-    tags: ['Python', 'FastAPI', 'PostgreSQL', 'Vanilla JS', 'Spotify API', 'Last.fm', 'YouTube API', 'REST APIs'],
-    github: 'https://github.com/spomis1/soundcad-music',
-    demo: 'https://spomis1.github.io/soundcad-music/',
   },
   {
     id: 'house-price',
@@ -399,7 +399,6 @@ const hobbies = [
   { icon: '🎵', labelKey: 'hobbies.music.label', descKey: 'hobbies.music.desc' },
   { icon: '📚', labelKey: 'hobbies.read.label',  descKey: 'hobbies.read.desc' },
   { icon: '🏃', labelKey: 'hobbies.run.label',   descKey: 'hobbies.run.desc' },
-  { icon: '⚽', labelKey: 'hobbies.pena.label',  descKey: 'hobbies.pena.desc' },
 ];
 
 // ============================================================

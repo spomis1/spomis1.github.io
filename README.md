@@ -1,6 +1,6 @@
 # spomis1.github.io
 
-Portfolio web personal de Sebastián Pomi — Data & Automation Analyst.
+Portfolio web personal de Sebastián Pomi — Data & Automation.
 
 🌐 **https://spomis1.github.io**
 

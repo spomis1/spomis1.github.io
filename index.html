@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sebastián Pomi — Data & Automation Analyst. Portfolio y CV online.">
+  <title>Sebastián Pomi — Data & Automation</title>
+
+  <!-- Anti-flash: debe ser el primer script, antes del CSS -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme') || 'dark';
+      var l = localStorage.getItem('lang') || 'es';
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.lang = l;
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="main-nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav-container">
+      <a href="#hero" class="logo" aria-label="Inicio">SP<span class="accent">.</span></a>
+
+      <div class="nav-links" id="nav-links" role="menubar">
+        <a href="#about"      class="nav-link" role="menuitem" data-i18n="nav.about">Sobre mí</a>
+        <a href="#experience" class="nav-link" role="menuitem" data-i18n="nav.experience">Experiencia</a>
+        <a href="#projects"   class="nav-link" role="menuitem" data-i18n="nav.projects">Proyectos</a>
+        <a href="#skills"     class="nav-link" role="menuitem" data-i18n="nav.skills">Skills</a>
+        <a href="#contact"    class="nav-link" role="menuitem" data-i18n="nav.contact">Contacto</a>
+      </div>
+
+      <div class="nav-controls">
+        <button id="lang-toggle" class="ctrl-btn lang-btn" aria-label="Cambiar idioma">EN</button>
+        <button id="theme-toggle" class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+          <!-- ícono insertado por JS -->
+        </button>
+        <a id="cv-download-nav"
+           href="assets/cv-es.pdf"
+           download
+           data-href-es="assets/cv-es.pdf"
+           data-href-en="assets/cv-es.pdf"
+           class="cv-btn"
+           data-i18n="nav.cv">Descargar CV</a>
+        <button id="hamburger" class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu" role="menu" aria-hidden="true">
+      <a href="#about"      class="mobile-link" role="menuitem" data-i18n="nav.about">Sobre mí</a>
+      <a href="#experience" class="mobile-link" role="menuitem" data-i18n="nav.experience">Experiencia</a>
+      <a href="#projects"   class="mobile-link" role="menuitem" data-i18n="nav.projects">Proyectos</a>
+      <a href="#skills"     class="mobile-link" role="menuitem" data-i18n="nav.skills">Skills</a>
+      <a href="#contact"    class="mobile-link" role="menuitem" data-i18n="nav.contact">Contacto</a>
+      <a id="cv-download-mobile"
+         href="assets/cv-es.pdf"
+         download
+         data-href-es="assets/cv-es.pdf"
+         data-href-en="assets/cv-es.pdf"
+         class="mobile-link cv-mobile"
+         data-i18n="nav.cv">Descargar CV</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" aria-label="Presentación">
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting" data-i18n="hero.greeting">Hola, soy</p>
+      <h1 class="hero-name gradient-text">Sebastián Pomi</h1>
+      <div class="hero-subtitle" aria-live="polite">
+        <span id="typing-text"></span><span class="typing-cursor" aria-hidden="true"></span>
+      </div>
+      <p class="hero-tagline" data-i18n="hero.tagline">
+        Transformo datos en decisiones y procesos en flujos automáticos.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">Ver Proyectos</a>
+        <a id="cv-download-hero"
+           href="assets/cv-es.pdf"
+           download
+           data-href-es="assets/cv-es.pdf"
+           data-href-en="assets/cv-es.pdf"
+           class="btn btn-secondary"
+           data-i18n="hero.cta.cv">Descargar CV</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-label" data-i18n="hero.scroll">Deslizá para explorar</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="section-container">
+      <h2 id="about-heading" class="section-title reveal" data-i18n="about.heading">Sobre mí</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="reveal" data-i18n="about.p1">
+            Soy uruguayo radicado en Buenos Aires, con un perfil híbrido entre Data Engineering, Análisis
+            de Datos y Automatización. Me especializo en construir pipelines robustos, transformar datos
+            complejos en información clara y accionable para la toma de decisiones, e integrar IA generativa
+            de forma nativa en proyectos reales: desde agentes conversacionales hasta automatizaciones con MCP.
+          </p>
+          <p class="reveal" data-i18n="about.p2">
+            Viví casi tres años en Madrid, donde completé mi especialización en Data Science y trabajé en
+            entornos corporativos europeos — una experiencia que reforzó mi adaptabilidad y mi visión de
+            los datos como herramienta de negocio. Hoy trabajo como Data &amp; Automation Analyst en Accenture
+            asignado a Mercado Pago, combinando ingeniería de datos, análisis de negocio y automatización inteligente.
+          </p>
+          <p class="reveal" data-i18n="about.p3">
+            Me interesa sumarme a equipos y empresas que pongan la tecnología y los datos en el centro —
+            entornos donde construir, automatizar y decidir con datos sea parte del día a día.
+          </p>
+        </div>
+        <div class="about-card card-glass reveal">
+          <div class="about-card-item">
+            <span class="about-card-icon">📍</span>
+            <div>
+              <span class="about-card-label" data-i18n="about.card.location">Ubicación</span>
+              <span class="about-card-value">Buenos Aires, Argentina</span>
+            </div>
+          </div>
+          <div class="about-card-item">
+            <span class="about-card-icon">🏢</span>
+            <div>
+              <span class="about-card-label" data-i18n="about.card.current">Empresa actual</span>
+              <span class="about-card-value">Accenture / Mercado Pago</span>
+            </div>
+          </div>
+          <div class="about-card-item">
+            <span class="about-card-icon">🎓</span>
+            <div>
+              <span class="about-card-label" data-i18n="about.card.education">Educación</span>
+              <span class="about-card-value">UBA<br>The Bridge</span>
+            </div>
+          </div>
+          <div class="about-card-item">
+            <span class="about-card-icon">🌐</span>
+            <div>
+              <span class="about-card-label" data-i18n="about.card.languages">Idiomas</span>
+              <span class="about-card-value">Español Nativo<br>Inglés B2</span>
+            </div>
+          </div>
+          <div class="about-card-item">
+            <span class="about-card-icon">🎯</span>
+            <div>
+              <span class="about-card-label" data-i18n="about.card.available">Open to</span>
+              <span class="about-card-value">Data Engineering<br>Proyectos con impacto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" aria-labelledby="exp-heading">
+    <div class="section-container">
+      <h2 id="exp-heading" class="section-title reveal" data-i18n="exp.heading">Experiencia</h2>
+      <div class="timeline" id="timeline-container">
+        <!-- Renderizado por JS -->
+      </div>
+      <h3 class="subsection-title reveal" data-i18n="exp.education">Educación</h3>
+      <div class="education-grid" id="education-container">
+        <!-- Renderizado por JS -->
+      </div>
+      <h3 class="subsection-title reveal" data-i18n="courses.heading">Cursos complementarios</h3>
+      <div class="education-grid" id="courses-container">
+        <!-- Renderizado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="section-container">
+      <h2 id="projects-heading" class="section-title reveal" data-i18n="projects.heading">Proyectos</h2>
+      <p class="section-subtitle reveal" data-i18n="projects.subtitle">Lo que he construido</p>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Renderizado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="section-container">
+      <h2 id="skills-heading" class="section-title reveal" data-i18n="skills.heading">Skills</h2>
+      <div class="skills-grid" id="skills-container">
+        <!-- Renderizado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOBBIES ===================== -->
+  <section id="hobbies" aria-labelledby="hobbies-heading">
+    <div class="section-container">
+      <h2 id="hobbies-heading" class="section-title reveal" data-i18n="hobbies.heading">Pasatiempos</h2>
+      <div class="hobbies-grid" id="hobbies-container">
+        <!-- Renderizado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="section-container contact-inner">
+      <h2 id="contact-heading" class="section-title reveal" data-i18n="contact.heading">¿Hablamos?</h2>
+      <p class="contact-sub reveal" data-i18n="contact.sub">
+        Estoy abierto a oportunidades en Data Engineering y DataOps. Escribime directamente.
+      </p>
+      <div class="contact-links reveal">
+        <a href="mailto:sebastianpomi@gmail.com" class="contact-link" aria-label="Email">
+          <span class="contact-link-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <span class="contact-link-text">sebastianpomi@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/sebastianpomi" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
+          <span class="contact-link-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </span>
+          <span class="contact-link-text">linkedin.com/in/sebastianpomi</span>
+        </a>
+        <a href="https://github.com/spomis1" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+          <span class="contact-link-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </span>
+          <span class="contact-link-text">github.com/spomis1</span>
+        </a>
+        <a href="tel:+5491128685070" class="contact-link" aria-label="Teléfono">
+          <span class="contact-link-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <span class="contact-link-text">+54 911 2868 5070</span>
+        </a>
+      </div>
+      <p class="contact-location reveal">Buenos Aires, Argentina · GMT-3</p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p class="footer-copy" data-i18n="footer.copy">Hecho con ❤️ y sin frameworks</p>
+    <p class="footer-sub">© 2025 Sebastián Pomi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -541,8 +541,8 @@ const ParticlesModule = {
 // ============================================================
 const TypingModule = {
   strings: {
-    es: ['Data & Automation Analyst', 'Data Engineer', 'Builder de Pipelines', 'Builder de Agentes con IA', 'DataOps & Automatización'],
-    en: ['Data & Automation Analyst', 'Data Engineer', 'Pipeline Builder', 'AI Agent Builder', 'DataOps & Automation'],
+    es: ['Data & Automation', 'Data Engineer', 'Builder de Pipelines', 'Builder de Agentes con IA', 'DataOps & Automatización'],
+    en: ['Data & Automation', 'Data Engineer', 'Pipeline Builder', 'AI Agent Builder', 'DataOps & Automation'],
   },
   el: null,
   current: 0,

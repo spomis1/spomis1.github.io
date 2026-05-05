@@ -84,7 +84,7 @@ const i18n = {
     'hero.scroll':    'Scroll to explore',
 
     'about.heading':         'About me',
-    'about.p1': "I hold a degree in Business Administration with a specialization in Data Science and a hybrid profile across Data Engineering, Data Analysis, and Automation. I build robust pipelines, turn complex data into clear and actionable insights for decision-making, and natively integrate generative AI into real projects: from conversational agents to MCP-powered automations.",
+    'about.p1': "My background combines Business Administration and Data Science, with a hybrid profile across Data Engineering, Data Analysis, and Automation. I build robust pipelines, turn complex data into clear and actionable insights for decision-making, and natively integrate generative AI into real projects: from conversational agents to MCP-powered automations.",
     'about.p2': 'I spent nearly three years in Madrid, where I completed my specialization in Data Science and worked in European corporate environments — an experience that strengthened my adaptability and my view of data as a core business tool. Today I work as Data & Automation Analyst at Accenture assigned to Mercado Pago, combining data engineering, business analysis, and intelligent automation.',
     'about.p3': "I'm looking to join teams and companies that put technology and data at the center — environments where building, automating, and deciding with data is part of everyday work.",
     'about.card.location':  'Location',

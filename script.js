@@ -46,7 +46,7 @@ const i18n = {
 
     'skills.heading':      'Skills',
     'skills.group.data':   'Datos & Cloud',
-    'skills.group.sql':    'SQL',
+    'skills.group.sql':    'SQL & Bases de Datos',
     'skills.group.python': 'Python',
     'skills.group.auto':   'IA & Automatización',
     'skills.group.bi':     'BI & Visualización',
@@ -106,7 +106,7 @@ const i18n = {
 
     'skills.heading':      'Skills',
     'skills.group.data':   'Data & Cloud',
-    'skills.group.sql':    'SQL',
+    'skills.group.sql':    'SQL & Databases',
     'skills.group.python': 'Python',
     'skills.group.auto':   'AI & Automation',
     'skills.group.bi':     'BI & Visualization',
@@ -374,7 +374,7 @@ const skills = [
   {
     groupKey: 'skills.group.sql',
     color: '#a855f7',
-    pills: ['CTEs', 'Window Functions', 'MERGE', 'Deduplicación', 'SAFE_CAST', 'UPDATE/INSERT'],
+    pills: ['BigQuery', 'PostgreSQL', 'MySQL', 'SQL Avanzado'],
   },
   {
     groupKey: 'skills.group.python',

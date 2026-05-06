@@ -49,7 +49,8 @@ const i18n = {
     'skills.group.sql':    'SQL',
     'skills.group.python': 'Python',
     'skills.group.auto':   'IA & Automatización',
-    'skills.group.ml':     'ML & Visualización',
+    'skills.group.bi':     'BI & Visualización',
+    'skills.group.ml':     'Machine Learning',
     'skills.group.tools':  'Herramientas',
 
     'hobbies.heading':    'Pasatiempos',
@@ -108,7 +109,8 @@ const i18n = {
     'skills.group.sql':    'SQL',
     'skills.group.python': 'Python',
     'skills.group.auto':   'AI & Automation',
-    'skills.group.ml':     'ML & Visualization',
+    'skills.group.bi':     'BI & Visualization',
+    'skills.group.ml':     'Machine Learning',
     'skills.group.tools':  'Tools',
 
     'hobbies.heading':    'Hobbies',
@@ -362,7 +364,7 @@ const skills = [
   {
     groupKey: 'skills.group.auto',
     color: '#10b981',
-    pills: ['Claude API', 'Claude Code', 'MCP', 'Agentic AI', 'Anthropic API', 'Prompt Engineering', 'n8n', 'Agentic Workflows', 'Multi-agent Systems', 'Google Apps Script', 'REST APIs', 'Webhooks'],
+    pills: ['Claude API', 'Claude Code', 'MCP', 'n8n', 'Prompt Engineering', 'Agentic Workflows', 'REST APIs', 'Google Apps Script', 'Webhooks'],
   },
   {
     groupKey: 'skills.group.data',
@@ -372,22 +374,27 @@ const skills = [
   {
     groupKey: 'skills.group.sql',
     color: '#a855f7',
-    pills: ['CTEs', 'Window Functions', 'MERGE', 'Deduplicación', 'SAFE_CAST', 'UPDATE/INSERT', 'BigQuery SQL'],
+    pills: ['CTEs', 'Window Functions', 'MERGE', 'Deduplicación', 'SAFE_CAST', 'UPDATE/INSERT'],
   },
   {
     groupKey: 'skills.group.python',
     color: '#f59e0b',
-    pills: ['pandas', 'numpy', 'FastAPI', 'Streamlit', 'DuckDB', 'Dask', 'google-cloud-bigquery', 'slack_sdk', 'paramiko', 'openpyxl'],
+    pills: ['pandas', 'numpy', 'FastAPI', 'Streamlit', 'DuckDB', 'google-cloud-bigquery', 'slack_sdk', 'openpyxl'],
+  },
+  {
+    groupKey: 'skills.group.bi',
+    color: '#ec4899',
+    pills: ['Power BI', 'Tableau', 'Looker Studio', 'Plotly', 'Seaborn', 'Matplotlib'],
   },
   {
     groupKey: 'skills.group.ml',
-    color: '#ec4899',
-    pills: ['Scikit-learn', 'XGBoost', 'Keras', 'Feature Engineering', 'EDA', 'Power BI', 'Tableau', 'Plotly', 'Seaborn', 'Matplotlib'],
+    color: '#f97316',
+    pills: ['Scikit-learn', 'XGBoost', 'Keras', 'Feature Engineering', 'EDA', 'Deep Learning'],
   },
   {
     groupKey: 'skills.group.tools',
     color: '#64748b',
-    pills: ['GitHub', 'Jira', 'VS Code', 'Cursor', 'Jupyter Notebook', 'Slack', 'Excel'],
+    pills: ['GitHub', 'Jira', 'VS Code', 'Cursor', 'Jupyter Notebook', 'Excel'],
   },
 ];
 

@@ -26,8 +26,8 @@ const i18n = {
 
     'about.heading':         'Sobre mí',
     'about.p1': 'Soy Licenciado en Administración con una especialización en Data Science y un perfil híbrido entre Data Engineering, Análisis de Datos y Automatización. Construyo pipelines robustos, transformo datos complejos en información clara y accionable para la toma de decisiones, e integro IA generativa de forma nativa en proyectos reales: desde agentes conversacionales hasta automatizaciones con MCP.',
-    'about.p2': 'Viví casi tres años en Madrid, donde completé mi especialización en Data Science y trabajé en entornos corporativos europeos — una experiencia que reforzó mi adaptabilidad y mi visión de los datos como herramienta de negocio. Hoy trabajo como Data & Automation Analyst en Accenture asignado a Mercado Pago, combinando ingeniería de datos, análisis de negocio y automatización inteligente.',
-    'about.p3': 'Me interesa sumarme a equipos y empresas que pongan la tecnología y los datos en el centro — entornos donde construir, automatizar y decidir con datos sea parte del día a día.',
+    'about.p2': 'Viví casi tres años en Madrid, donde completé mi especialización en Data Science y trabajé en entornos corporativos europeos. Una experiencia que reforzó mi adaptabilidad y mi visión de los datos como herramienta de negocio. Hoy trabajo como Data & Automation Analyst en Accenture asignado a Mercado Pago, combinando ingeniería de datos, análisis de negocio y automatización inteligente.',
+    'about.p3': 'Me interesa sumarme a equipos y empresas que pongan la tecnología y los datos en el centro. Entornos donde construir, automatizar y decidir con datos sea parte del día a día.',
     'about.card.location':  'Ubicación',
     'about.card.current':   'Empresa actual',
     'about.card.education': 'Educación',
@@ -86,8 +86,8 @@ const i18n = {
 
     'about.heading':         'About me',
     'about.p1': "My background combines Business Administration and Data Science, with a hybrid profile across Data Engineering, Data Analysis, and Automation. I build robust pipelines, turn complex data into clear and actionable insights for decision-making, and natively integrate generative AI into real projects: from conversational agents to MCP-powered automations.",
-    'about.p2': 'I spent nearly three years in Madrid, where I completed my specialization in Data Science and worked in European corporate environments — an experience that strengthened my adaptability and my view of data as a core business tool. Today I work as Data & Automation Analyst at Accenture assigned to Mercado Pago, combining data engineering, business analysis, and intelligent automation.',
-    'about.p3': "I'm looking to join teams and companies that put technology and data at the center — environments where building, automating, and deciding with data is part of everyday work.",
+    'about.p2': 'I spent nearly three years in Madrid, where I completed my specialization in Data Science and worked in European corporate environments. An experience that strengthened my adaptability and my view of data as a core business tool. Today I work as Data & Automation Analyst at Accenture assigned to Mercado Pago, combining data engineering, business analysis, and intelligent automation.',
+    'about.p3': "I'm looking to join teams and companies that put technology and data at the center. Environments where building, automating, and deciding with data is part of everyday work.",
     'about.card.location':  'Location',
     'about.card.current':   'Current company',
     'about.card.education': 'Education',
@@ -871,12 +871,10 @@ const HobbiesRenderer = {
 
     container.innerHTML = hobbies.map((h, i) => {
       const label = i18n[lang][h.labelKey] || '';
-      const desc  = i18n[lang][h.descKey]  || '';
       return `
         <div class="hobby-card" style="transition-delay:${i * 0.08}s">
           <span class="hobby-emoji" aria-hidden="true">${h.icon}</span>
           <div class="hobby-label">${label}</div>
-          <div class="hobby-desc">${desc}</div>
         </div>`;
     }).join('');
 
